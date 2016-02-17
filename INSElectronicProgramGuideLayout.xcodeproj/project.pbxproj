@@ -27,9 +27,9 @@
 		06A4AF301A4374FD004C8818 /* ISFloatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A4AF2E1A4374FD004C8818 /* ISFloatingCell.m */; };
 		06A4AF311A4374FD004C8818 /* ISFloatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A4AF2F1A4374FD004C8818 /* ISFloatingCell.xib */; };
 		4C8EB35787474B6A91364CF3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADAE7F8D18E4BBE9F229769 /* libPods.a */; };
-		D2FC139C1A432F9500C45BEA /* INSElectronicProgramGuideLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC13971A432F9500C45BEA /* INSElectronicProgramGuideLayout.m */; };
-		D2FC139D1A432F9500C45BEA /* INSTimerWeakTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC13991A432F9500C45BEA /* INSTimerWeakTarget.m */; };
-		D2FC139E1A432F9500C45BEA /* NSDate+INSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC139B1A432F9500C45BEA /* NSDate+INSUtils.m */; };
+		E128AB661C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E128AB611C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.m */; };
+		E128AB671C74B9F00094C8D8 /* INSTimerWeakTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = E128AB631C74B9F00094C8D8 /* INSTimerWeakTarget.m */; };
+		E128AB681C74B9F00094C8D8 /* NSDate+INSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E128AB651C74B9F00094C8D8 /* NSDate+INSUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,12 +80,12 @@
 		65EEB555FB7D358602C981A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		703EE9D4205C16B67DF0F034 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9ADAE7F8D18E4BBE9F229769 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2FC13961A432F9500C45BEA /* INSElectronicProgramGuideLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSElectronicProgramGuideLayout.h; sourceTree = "<group>"; };
-		D2FC13971A432F9500C45BEA /* INSElectronicProgramGuideLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSElectronicProgramGuideLayout.m; sourceTree = "<group>"; };
-		D2FC13981A432F9500C45BEA /* INSTimerWeakTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INSTimerWeakTarget.h; sourceTree = "<group>"; };
-		D2FC13991A432F9500C45BEA /* INSTimerWeakTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INSTimerWeakTarget.m; sourceTree = "<group>"; };
-		D2FC139A1A432F9500C45BEA /* NSDate+INSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+INSUtils.h"; sourceTree = "<group>"; };
-		D2FC139B1A432F9500C45BEA /* NSDate+INSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+INSUtils.m"; sourceTree = "<group>"; };
+		E128AB601C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INSElectronicProgramGuideLayout.h; path = INSElectronicProgramGuideLayout/INSElectronicProgramGuideLayout.h; sourceTree = SOURCE_ROOT; };
+		E128AB611C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = INSElectronicProgramGuideLayout.m; path = INSElectronicProgramGuideLayout/INSElectronicProgramGuideLayout.m; sourceTree = SOURCE_ROOT; };
+		E128AB621C74B9F00094C8D8 /* INSTimerWeakTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INSTimerWeakTarget.h; path = INSElectronicProgramGuideLayout/INSTimerWeakTarget.h; sourceTree = SOURCE_ROOT; };
+		E128AB631C74B9F00094C8D8 /* INSTimerWeakTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = INSTimerWeakTarget.m; path = INSElectronicProgramGuideLayout/INSTimerWeakTarget.m; sourceTree = SOURCE_ROOT; };
+		E128AB641C74B9F00094C8D8 /* NSDate+INSUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+INSUtils.h"; path = "INSElectronicProgramGuideLayout/NSDate+INSUtils.h"; sourceTree = SOURCE_ROOT; };
+		E128AB651C74B9F00094C8D8 /* NSDate+INSUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+INSUtils.m"; path = "INSElectronicProgramGuideLayout/NSDate+INSUtils.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,12 +226,12 @@
 		D2FC13951A432F9500C45BEA /* INSElectronicProgramGuideLayout */ = {
 			isa = PBXGroup;
 			children = (
-				D2FC13961A432F9500C45BEA /* INSElectronicProgramGuideLayout.h */,
-				D2FC13971A432F9500C45BEA /* INSElectronicProgramGuideLayout.m */,
-				D2FC13981A432F9500C45BEA /* INSTimerWeakTarget.h */,
-				D2FC13991A432F9500C45BEA /* INSTimerWeakTarget.m */,
-				D2FC139A1A432F9500C45BEA /* NSDate+INSUtils.h */,
-				D2FC139B1A432F9500C45BEA /* NSDate+INSUtils.m */,
+				E128AB601C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.h */,
+				E128AB611C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.m */,
+				E128AB621C74B9F00094C8D8 /* INSTimerWeakTarget.h */,
+				E128AB631C74B9F00094C8D8 /* INSTimerWeakTarget.m */,
+				E128AB641C74B9F00094C8D8 /* NSDate+INSUtils.h */,
+				E128AB651C74B9F00094C8D8 /* NSDate+INSUtils.m */,
 			);
 			name = INSElectronicProgramGuideLayout;
 			path = ../../INSElectronicProgramGuideLayout;
@@ -391,19 +391,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2FC139D1A432F9500C45BEA /* INSTimerWeakTarget.m in Sources */,
+				E128AB681C74B9F00094C8D8 /* NSDate+INSUtils.m in Sources */,
 				063FB7B119D9F35E004FA0DC /* AppDelegate.m in Sources */,
 				06420EDD19E1A57F00F7969C /* ISHourHeaderBackgroundView.m in Sources */,
 				06420ED119E13FD300F7969C /* Model.xcdatamodeld in Sources */,
 				06A4AF2C1A437353004C8818 /* INSEPGViewController.m in Sources */,
 				06A4AF301A4374FD004C8818 /* ISFloatingCell.m in Sources */,
+				E128AB661C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.m in Sources */,
 				063FB7AE19D9F35E004FA0DC /* main.m in Sources */,
-				D2FC139C1A432F9500C45BEA /* INSElectronicProgramGuideLayout.m in Sources */,
+				E128AB671C74B9F00094C8D8 /* INSTimerWeakTarget.m in Sources */,
 				0639E06C19DCA2D2009F1BC8 /* ISHeaderBackgroundView.m in Sources */,
 				0639E06F19DCA2D2009F1BC8 /* ISHourHeader.m in Sources */,
 				06420ED819E141CE00F7969C /* Entry.m in Sources */,
 				0639E06819DCA2D2009F1BC8 /* ISSectionHeader.m in Sources */,
-				D2FC139E1A432F9500C45BEA /* NSDate+INSUtils.m in Sources */,
 				0639E06319DCA2D2009F1BC8 /* ISCurrentTimeGridlineView.m in Sources */,
 				06420ED519E141CE00F7969C /* Channel.m in Sources */,
 			);
