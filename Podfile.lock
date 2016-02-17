@@ -1,0 +1,18 @@
+PODS:
+  - LoremIpsum (1.0.0)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core (= 2.2)
+  - MagicalRecord/Core (2.2)
+  - UIColor+MLPFlatColors (1.0)
+
+DEPENDENCIES:
+  - LoremIpsum
+  - MagicalRecord
+  - UIColor+MLPFlatColors
+
+SPEC CHECKSUMS:
+  LoremIpsum: 9029c55d36501b2ee0b05cc9ecda11d3a0479160
+  MagicalRecord: 2dc87179ae7c1f2a274442624ec65a07d4357a6f
+  UIColor+MLPFlatColors: 14deb8f28da06ab8918c14231d4ff49ca7cd384a
+
+COCOAPODS: 0.39.0
