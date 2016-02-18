@@ -27,6 +27,7 @@
 		06A4AF301A4374FD004C8818 /* ISFloatingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A4AF2E1A4374FD004C8818 /* ISFloatingCell.m */; };
 		06A4AF311A4374FD004C8818 /* ISFloatingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A4AF2F1A4374FD004C8818 /* ISFloatingCell.xib */; };
 		4C8EB35787474B6A91364CF3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADAE7F8D18E4BBE9F229769 /* libPods.a */; };
+		6F347F921C760B940097587E /* CHPEPGCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F347F911C760B940097587E /* CHPEPGCollectionViewLayout.m */; };
 		E128AB661C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E128AB611C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.m */; };
 		E128AB671C74B9F00094C8D8 /* INSTimerWeakTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = E128AB631C74B9F00094C8D8 /* INSTimerWeakTarget.m */; };
 		E128AB681C74B9F00094C8D8 /* NSDate+INSUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E128AB651C74B9F00094C8D8 /* NSDate+INSUtils.m */; };
@@ -78,6 +79,8 @@
 		06A4AF2E1A4374FD004C8818 /* ISFloatingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISFloatingCell.m; sourceTree = "<group>"; };
 		06A4AF2F1A4374FD004C8818 /* ISFloatingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISFloatingCell.xib; sourceTree = "<group>"; };
 		65EEB555FB7D358602C981A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6F347F901C760B940097587E /* CHPEPGCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHPEPGCollectionViewLayout.h; sourceTree = "<group>"; };
+		6F347F911C760B940097587E /* CHPEPGCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHPEPGCollectionViewLayout.m; sourceTree = "<group>"; };
 		703EE9D4205C16B67DF0F034 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9ADAE7F8D18E4BBE9F229769 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E128AB601C74B9F00094C8D8 /* INSElectronicProgramGuideLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = INSElectronicProgramGuideLayout.h; path = INSElectronicProgramGuideLayout/INSElectronicProgramGuideLayout.h; sourceTree = SOURCE_ROOT; };
@@ -152,6 +155,7 @@
 		063FB7AA19D9F35E004FA0DC /* INSElectronicProgramGuideLayout */ = {
 			isa = PBXGroup;
 			children = (
+				6F347F8F1C760B720097587E /* Layout */,
 				D2FC13951A432F9500C45BEA /* INSElectronicProgramGuideLayout */,
 				06420ECE19E13F9F00F7969C /* CoreData */,
 				0639E04B19DCA2CA009F1BC8 /* Cells */,
@@ -204,6 +208,15 @@
 				06420ED419E141CE00F7969C /* Channel.m */,
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		6F347F8F1C760B720097587E /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				6F347F901C760B940097587E /* CHPEPGCollectionViewLayout.h */,
+				6F347F911C760B940097587E /* CHPEPGCollectionViewLayout.m */,
+			);
+			name = Layout;
 			sourceTree = "<group>";
 		};
 		AA51F41B14C31D474CFA1EB4 /* Pods */ = {
@@ -394,6 +407,7 @@
 				E128AB681C74B9F00094C8D8 /* NSDate+INSUtils.m in Sources */,
 				063FB7B119D9F35E004FA0DC /* AppDelegate.m in Sources */,
 				06420EDD19E1A57F00F7969C /* ISHourHeaderBackgroundView.m in Sources */,
+				6F347F921C760B940097587E /* CHPEPGCollectionViewLayout.m in Sources */,
 				06420ED119E13FD300F7969C /* Model.xcdatamodeld in Sources */,
 				06A4AF2C1A437353004C8818 /* INSEPGViewController.m in Sources */,
 				06A4AF301A4374FD004C8818 /* ISFloatingCell.m in Sources */,

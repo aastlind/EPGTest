@@ -18,9 +18,12 @@
 #import "Entry.h"
 
 @interface INSEPGViewController () <INSElectronicProgramGuideLayoutDataSource, NSFetchedResultsControllerDelegate>
+
 @property (nonatomic, weak) INSElectronicProgramGuideLayout *collectionViewEPGLayout;
 @property (nonatomic, strong) NSFetchedResultsController *fetchedResultsController;
+
 @end
+
 
 @implementation INSEPGViewController
 
@@ -33,17 +36,12 @@
 {
     [super viewDidLoad];
 
-//    UIImageView *backgroundImage = [[UIImageView alloc] initWithFrame:self.view.bounds];
-//    backgroundImage.image = [UIImage imageNamed:@"backgroundImage"];
-//    self.collectionView.backgroundView = backgroundImage;
-
     self.fetchedResultsController = [Entry MR_fetchAllGroupedBy:@"channel.iD" withPredicate:nil sortedBy:@"channel.iD,channel.name" ascending:YES delegate:self];
 
     self.view.backgroundColor = [UIColor whiteColor];
-    // Do any additional setup after loading the view, typically from a nib.
     self.collectionViewEPGLayout.dataSource = self;
 
-    self.collectionViewEPGLayout.currentTimeVerticalGridlineWidth = 0.5f;
+    self.collectionViewEPGLayout.currentTimeVerticalGridlineWidth = 1.0f;
 //    self.collectionViewEPGLayout.sectionHeight = 60;
 //    self.collectionViewEPGLayout.sectionHeaderWidth = 110;
 
@@ -63,7 +61,7 @@
     [self.collectionViewEPGLayout registerClass:ISHourHeaderBackgroundView.class forDecorationViewOfKind:INSEPGLayoutElementKindHourHeaderBackground];
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        [self.collectionViewEPGLayout scrollToCurrentTimeAnimated:YES];
+        [self.collectionViewEPGLayout scrollToCurrentTimeAnimated:YES];
     });
 }
 
@@ -90,7 +88,6 @@
     if (kind == INSEPGLayoutElementKindSectionHeader) {
         ISSectionHeader *dayColumnHeader = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass([ISSectionHeader class]) forIndexPath:indexPath];
         Entry *entry = [self.fetchedResultsController objectAtIndexPath:indexPath];
-
         dayColumnHeader.dayLabel.text = entry.channel.name;
         view = dayColumnHeader;
     } else if (kind == INSEPGLayoutElementKindHourHeader) {
@@ -101,7 +98,7 @@
         ISHourHeader *timeRowHeader = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:NSStringFromClass([ISHourHeader class]) forIndexPath:indexPath];
         timeRowHeader.time = [self.collectionViewEPGLayout dateForHalfHourHeaderAtIndexPath:indexPath];
         view = timeRowHeader;
-    } 
+    }
 
     return view;
 }
@@ -132,8 +129,4 @@
     [self.collectionView reloadData];
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-}
 @end

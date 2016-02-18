@@ -42,11 +42,6 @@ extern NSUInteger const INSEPGLayoutMinBackgroundZ;
 
 @protocol INSElectronicProgramGuideLayoutDataSource;
 
-typedef NS_ENUM(NSUInteger, INSElectronicProgramGuideLayoutType) {
-    INSElectronicProgramGuideLayoutTypeTimeRowAboveDayColumn,
-    INSElectronicProgramGuideLayoutTypeDayColumnAboveTimeRow
-};
-
 @interface INSElectronicProgramGuideLayout : UICollectionViewLayout
 
 /**
@@ -94,8 +89,6 @@ typedef NS_ENUM(NSUInteger, INSElectronicProgramGuideLayoutType) {
  *  Default value is UIEdgeInsetsMake(0, 0, 0, 10)
  */
 @property (nonatomic, assign) UIEdgeInsets cellMargin;
-
-@property (nonatomic, assign) INSElectronicProgramGuideLayoutType headerLayoutType;
 
 @property (nonatomic, weak) id <INSElectronicProgramGuideLayoutDataSource> dataSource;
 
